@@ -25,8 +25,8 @@
     <div id="countdown"></div>
 
     <script>
-        // Set the date you're counting down to
-        var countdownDate = new Date("Oct 10, 2024 20:20:59").getTime();
+        // Set the date and time you're counting down to (October 10, 2024 at 8:20 PM)
+        var countdownDate = new Date("Oct 10, 2024 20:20:00").getTime();
 
         // Update the countdown every 1 second
         var x = setInterval(function() {
@@ -42,7 +42,7 @@
 
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("countdown").innerHTML = "EXPIRED";
+                document.getElementById("countdown").innerHTML = "TIME'S UP!";
             }
         }, 1000);
     </script>
